@@ -1,9 +1,14 @@
-## youtube-playlist-scraper-powershell
+## YouTub Playlist Scraper for Powershell
 
 Command-line tool for Windows to quickly convert youtube
 playlists and individual songs to low quality mp3s.
 
-### Installing Git
+### Dependencies
+
+ - [youtube-dl](https://github.com/ytdl-org/youtube-dl)
+ - [ffmpeg](https://github.com/FFmpeg/FFmpeg)
+
+### Installing Git For Windows
 
 First, make sure you have [Git For Windows]([https://gitforwindows.org/) installed.
 
@@ -14,7 +19,10 @@ First, make sure you have [Git For Windows]([https://gitforwindows.org/) install
 ### Clone youtube-playlist-scraper-powershell to your local computer
 
 Hit `Windows Key + R` together to bring up the run dialog box and in the text input field therein,
-enter `cmd` to bring up the command line terminal. If you're familiar with opening Powershell any other way, do what makes you comfortable!
+enter `cmd` to bring up the command line terminal. If you're familiar with opening Powershell any other way, do what
+makes you comfortable! One way is by entering powershell.exe directly into your terminal if you have in your system path.
+
+> Note: If this doesn't work you might need to configure Power Shell to work with your system. For those instructions, read this link
 
 ```
 powershell.exe
