@@ -13,15 +13,15 @@ First, make sure you have [Git For Windows]([https://gitforwindows.org/) install
 
 ### Clone youtube-playlist-scraper-powershell to your local computer
 
-Hit windows key + R and in the field enter and press return to launch powershell:
+Hit `Windows Key + R` together to bring up the run dialog box and in the text input field therein,
+enter `cmd` to bring up the command line terminal. If you're familiar with opening Powershell any other way, do what makes you comfortable!
 
 ```
-powershell
-c
-git clone https://github.com/owenalek/youtube-playlist-scraper-powershell
-cd youtube-playlist-scraper-powershell
+powershell.exe
+PS> cd ~
+PS> git clone https://github.com/owenalek/youtube-playlist-scraper-powershell
+PS> youtube-playlist-scraper-powershell
 ```
-
 This has also switched to your home directory, cloned the repository there, and changed directories so youtube-playlist-scraper-powershell is the parent.
 
 Now find the URL for your track or playlist and copy it.
