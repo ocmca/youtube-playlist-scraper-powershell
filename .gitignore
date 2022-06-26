@@ -1,4 +1,5 @@
 **/*.mp3
-./d-archive.txt
 **/s*.part
 *.part
+d-archive.txt
+d-archive.txt
