@@ -1,6 +1,4 @@
 **/*.mp3
-d-archive.txt
+*archive.txt
 **/s*.part
 *.part
-ff*.exe
-youtube-dl.exe
