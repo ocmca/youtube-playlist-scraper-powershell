@@ -2,3 +2,4 @@
 ./d-archive.txt
 **/s*.part
 *.part
+**/*.txt
