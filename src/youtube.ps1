@@ -1,14 +1,23 @@
-Get-Location | set -name loc
+Invoke-Expression "./src/youtube-dl.exe -U"
 
-echo "Hello Human! Be kind. Rewind."
-echo "Enter Playlist URL: "
-Read-Host | set -name URL
+Write-Host "Hello Human! Be kind. Rewind."
+
+Set-Variable -name URL -Value ""
 
 while ($URL -eq "")
 {
-    echo "Enter Playlist URL: "
-    Read-Host | set -name URL
+    Read-Host "Enter Youtube Playlist / Video URL: " | Set-Variable -name URL
 }
 
-$filename = "$loc\songs\%(title)s.%(ext)s"
-.\src\youtube-dl -o ""$filename"" --audio-format mp3 -x --audio-quality 5 --download-archive ""d-archive.txt"" --yes-playlist $URL
+(get-date).year.ToString()+"-"+(get-date).month.ToString()+"-"+ (get-date).day | Set-Variable -name theDate
+
+if(!(Test-Path -Path "$loc/songs/$theDate")){
+    mkdir "$loc/songs/$theDate"
+}
+
+Set-Variable -Name params -Value "-o ""$loc\songs\$theDate\%(title)s.%(ext)s"" --audio-format mp3 -x --audio-quality 5 --download-archive ""d-archive.txt"" --yes-playlist --playlist-random $URL"
+
+Write-Host -Object $params
+    
+Invoke-Expression "./src/youtube-dl.exe $params"
+
