@@ -1,5 +1,4 @@
 **/*.mp3
 **/s*.part
 *.part
-d-archive.txt
-d-archive.txt
+*.txt
