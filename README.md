@@ -1,16 +1,9 @@
 ## Super Basic YouTube Playlist Scraper for Powershell
 
-
-
 Command-line tool for Windows to quickly convert youtube
 playlists and individual songs to low quality mp3s.
 
-
-<br/>
-
 -----
-
-<br/>
 
 ## Dependencies
 
@@ -18,11 +11,7 @@ playlists and individual songs to low quality mp3s.
 - [ffmpeg](https://github.com/FFmpeg/FFmpeg)
  - [Git For Windows](https://gitforwindows.org/)
 
-<br/>
-
 -----
-
-<br/>
 
 ### Installing *Git For Windows*
 
@@ -32,16 +21,9 @@ First, be sure [Git For Windows](https://gitforwindows.org/) is installed.
 > The default options will insert git into your windows PATH which you want. 
 > It will run from PowerShell, CMD, and "git bash" shell based on Msys (a Linux-like Gnu dev environment for Windows from the MinGW project)
 
-<br/>
-
 -----
 
-<br/>
-
 ### Clone **youtube-playlist-scraper-powershell** repository
-
-<br/>
-
 
 Press and hold `Windows Key + R` together, I'm order to bring up a run dialog box. 
 
